@@ -19,4 +19,20 @@ linear time, O(n).
 
 ## Exercise II
 
+First, I would call the first the lowest possible and the nth floor the highest 
+possible. I would determine the middle floor between the lowest possible and the
+highest possible.
 
+Then, I would go to the middle floor and drop the egg.
+
+If the egg broke, I'd label the middle floor as the highest possible and restart 
+the process.
+
+If the egg didn't break, I'd label the middle floor as the lowest possible and 
+restart the process.
+
+Before restarting the process, I'd check to see if lowest possible was one floor 
+below highest possible. If it was, I'd stop and report that lowest possible was 
+the highest floor you could toss an egg from without it breaking.
+
+The runtime is O(log n) since this is essentially a binary search.
